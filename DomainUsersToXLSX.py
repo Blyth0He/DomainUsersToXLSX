@@ -132,7 +132,7 @@ def init_ldap_session(args, domain, username, password, lmhash, nthash):
     if args.use_kerberos:
         target = get_machine_name(args, domain)
     else:
-        if args.dc_ip is not None:
+        if args.dc_ip is not None: 
             target = args.dc_ip
         else:
             target = domain
